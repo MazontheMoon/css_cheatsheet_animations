@@ -42,13 +42,18 @@ To quickly and easily reference CSS elements or values.
     3. [ ] Create page map
 3. [ ] Design<br>
     1. [ ] Wireframe
-    2. [ ] Design draft
+    2. [ ] Mockup design
     3. [ ] Colour scheme
     4. [ ] Fonts and Icons
     5. [ ] Prototype
 4. [ ] Build<br>
     1. [ ] HTML skeleton
-    2. [ ]  
+    2. [ ] Header
+    3. [ ] Navigation
+    3. [ ] Sections and Subsections
+    4. [ ] Figures and Media
+    4. [ ] Aside
+    3. [ ] Footer 
 5. [ ] Styling<br>
     1. [ ] Page Layout
     2. [ ] Sections
