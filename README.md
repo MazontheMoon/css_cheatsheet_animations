@@ -37,9 +37,9 @@ To quickly and easily reference CSS elements or values.
     2. [x] Create README and CONTRIBUTORS
     3. [x] Create INDEX and STYLES
 2. [ ] Content<br>
-    1. [ ] Gather content
-    2. [ ] Organise text content
-    3. [ ] Create page map
+    1. [x] Gather content
+    2. [x] Organise text content
+    3. [x] Create page map
 3. [ ] Design<br>
     1. [ ] Wireframe
     2. [ ] Mockup design
