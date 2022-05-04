@@ -5,7 +5,7 @@ On a frontend development journey I have created a cheat-sheet for each topic re
 
  ## Mission
 
-To quickly and easily reference CSS elements or values.
+As a frontend developer, I want to quickly and easily reference CSS elements or values when working on a project.
 
  ## Requirements
 
