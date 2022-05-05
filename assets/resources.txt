@@ -1,0 +1,87 @@
+Helping me...
+https://mazcodesonthemoon.wordpress.com/2020/10/12/teaching-myself-to-code-css/
+
+https://www.codecademy.com/resources/docs/css
+https://dev.w3.org/html5/html-author/charref
+https://google.github.io/styleguide/htmlcssguide.html
+https://developer.mozilla.org/docs/Web/CSS/color_value#color_keywords
+https://www.w3.org/2009/cheatsheet/
+https://caniuse.com/
+https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes
+https://html.spec.whatwg.org/
+https://www.w3.org/WAI/test-evaluate/preliminary/
+https://www.w3.org/TR/2021/PR-html-aria-20210930/
+https://validator.w3.org/
+https://jigsaw.w3.org/css-validator/
+https://validator.w3.org/checklink
+https://www.smashingmagazine.com/2021/05/useful-vs-code-extensions-web-developers/
+https://responsibleweb.app
+https://webaim.org/techniques/keyboard/
+https://whatwg.org/
+https://tiny-helpers.dev
+https://shields.io/
+https://www.a11yproject.com/checklist/
+https://toptal.com/developers/gitignore
+https://ogp.me/ (open graph protocol)
+
+My Design Hat:
+
+https://lawsofux.com/
+https://fluid-typography.netlify.app/
+https://cssgradient.io/
+https://shadows.brumm.af/
+https://omatsuri.app/color-shades-generator
+https://www.smashingmagazine.com/2021/03/svg-generators/
+http://jashgopani.me/colorinator/
+https://www.imagemaps.net
+https://realfavicongenerator.net
+https://favicon.io/emoji-favicons
+https://formito.com/tools/favicon
+https://hihayk.github.io/doppler/ (font line height)
+https://utopia.fyi/ (fluid typography)
+https://patterns.helloyes.dev/ (svg backgrounds)
+https://lorem.space/ (image placeholder)
+https://animista.net/ (CSS animations)
+https://cubic-bezier.com
+https://www.htmlsymbols.xyz/ (html symbols)
+https://lorem.space/ (placeholder images)
+123apps.com (video editing)
+
+README STATEMENT!
+
+As a ..., I want to ..., so that...
+
+DOCUMENT FLOW ACCESSIBILITY
+
+margin-block-start margin-inline-end margin-block-end margin-inline-start 
+
+instead of 
+
+margin-top margin-right margin-bottom margin-left 
+
+Same for border padding and content boxes.
+
+max-inline-size instead of max-width 
+max-block-size instead of max-height
+
+align end instead of align left
+
+BEST PRACTICE
+
+img {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+<!--in <head> for important images ONLY USE IF VITAL-->
+<link rel="prefetch" href="hero.jpg" as="image">
+
+<img alt=""(presentational image) loading="eager" (or lazy for images below cut)>
+
+css for link states: 
+.nav-link:is(:focus, :hover) {}
+
+
+
+
+
