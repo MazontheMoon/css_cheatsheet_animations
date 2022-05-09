@@ -12,3 +12,13 @@ Colour Pallette:
 #FFFAFF - Off white - --col_light
 
 https://github.com/MazontheMoon/css_cheatsheet_transitions_transforms/blob/main/assets/mugshot.jpg?raw=true
+
+FONT:
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap" rel="stylesheet"> 
+
+    font-family: 'Lobster', cursive;
+
+    font-family: 'Roboto', sans-serif;
