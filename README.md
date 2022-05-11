@@ -36,7 +36,7 @@ As a frontend developer, I want to quickly and easily reference CSS elements or 
     1. [x] Github repo and licence
     2. [x] Create README and CONTRIBUTORS
     3. [x] Create INDEX and STYLES
-2. [ ] Content<br>
+2. [x] Content<br>
     1. [x] Gather content
     2. [x] Organise text content
     3. [x] Create page map
