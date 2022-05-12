@@ -41,7 +41,7 @@ As a frontend developer, I want to quickly and easily reference CSS elements or 
     2. [x] Organise text content
     3. [x] Create page map
 3. [ ] Design<br>
-    1. [ ] Wireframe
+    1. [x] Wireframe
     2. [ ] Mockup design
     3. [ ] Colour scheme
     4. [ ] Fonts and Icons
