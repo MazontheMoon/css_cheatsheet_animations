@@ -6,8 +6,10 @@ Mobile (small screen view)
  - Header
  - Nav
  - Main section and subsection layout
- - In Progress - Aside and Footer 
+ - Aside and Footer 
  
+Monitor (large screen view) 
+ - Header
  
 Colour Pallette:
 
