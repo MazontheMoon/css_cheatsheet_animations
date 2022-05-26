@@ -44,7 +44,7 @@ As a frontend developer, I want to quickly and easily reference CSS elements or 
     1. [x] Wireframe
     2. [x] Mockup design
     3. [x] Colour scheme
-    4. [ ] Fonts and Icons
+    4. [x] Fonts and Icons
     5. [ ] Prototype
 4. [ ] Build<br>
     1. [ ] HTML skeleton
