@@ -1,17 +1,9 @@
-Design Prototype:
+PROTOTYPE:
 
 https://www.figma.com/file/jmNcnluOJqQCe9o1gA3zxJ/CSS-Animations
 
-Mobile (small screen view)
- - Header
- - Nav
- - Main section and subsection layout
- - Aside and Footer 
  
-Monitor (large screen view) 
- - Header
- 
-Colour Pallette:
+COLOURS:
 
 https://coolors.co/93b7be-554348-d4f5f5-8c9a9e-747578
 
