@@ -40,7 +40,7 @@ As a frontend developer, I want to quickly and easily reference CSS elements or 
     1. [x] Gather content
     2. [x] Organise text content
     3. [x] Create page map
-3. [ ] Design<br>
+3. [x] Design<br>
     1. [x] Wireframe
     2. [x] Mockup design
     3. [x] Colour scheme
