@@ -9,9 +9,10 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS - Animations</title>
     <meta name="description" content="Teach Myself CSS - Animations. A series of css cheatsheets I have created on my self taught journey to become a frontend developer.">
+    <!--social media link card-->
     <meta property="og:title" content="CSS - Animations">
     <meta property="og:description" content="Teach Myself CSS - Animations. A series of css cheatsheets I have created on my self taught journey to become a frontend developer.">
-      <meta property="og:image" content="#">
+    <meta property="og:image" content="#">
     <meta property="og:image:alt" content="Snapshot of webpage content">
     <meta property="og:locale" content="en_GB">
     <meta property="og:type" content="website">
@@ -28,6 +29,441 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
     <meta name="theme-color" content="#6930c3"> <!--UPDATE COLOUR-->
   </head>
 
-<!--===============================
-  Finding your way around 
-  =================================-->
+<!--PAGE MAP-->
+
+  <body>
+    <header>
+      <h1>CSS Animations</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#">Animations</a></li>
+        <li><a href="#">Keyframes</a></li>
+      </ul>
+    </nav>
+    <main>
+      <!--intro section-->
+      <section>
+        <div class="sec_box">
+          <p>CSS animations have two parts, the first using the <span class="codeword">animation</span> property to specify how the animation sequence progresses and then using <span class="codeword">@keyframes</span> rule for the visual appearance of the animation.</p>
+        </div>
+      </section>
+      <!--END OF intro section-->
+      <!--START OF animation section-->
+      <section>
+        <header>
+          <h2 id="sec_anim">Animations</h2>
+        </header>
+        <div class="sec_box">
+          <ul class="menu_box">
+            <li><a href="">animation-name</a></li>
+            <li><a href="">animation-duration</a></li>
+            <li><a href="">animation-timing-function</a></li>
+            <li><a href="">animation-delay</a></li>
+            <li><a href="">animation-iteration-count</a></li>
+            <li><a href="">animation-direction</a></li>
+            <li><a href="">animation-fill-mode</a></li>
+            <li><a href="">animation-play-state</a></li>
+            <li><a href="">animation</a></li>
+          </ul>
+        </div>
+        <!--START OF animation-name sub-section-->
+        <div class="sec_box">
+          <header>
+            <h3 id="sec_anim_name">animation-name</h3>
+          </header>
+          <div class="text_box">
+            <p></p>
+          </div>
+          <div class="code_box">
+            <code>
+              <span class="comment"></span>
+            </code>
+          </div>
+        </div>
+        <!--END OF animation-name sub-section-->
+        <!--START OF animation-duration sub-section-->
+        <div class="sec_box">
+          <header>
+            <h3 id="sec_anim_dur">animation-duration</h3>
+          </header>
+          <div class="text_box">
+            <p></p>
+          </div>
+          <div class="code_box">
+            <code>
+              <span class="comment"></span>
+            </code>
+          </div>
+        </div>
+        <!--END OF animation-duration sub-section-->
+        <!--START OF animation-timing-function sub-section-->
+        <div class="sec_box">
+          <header>
+            <h3 id="sec_anim_time">animation-timing-function</h3>
+          </header>
+          <div class="menu_box">
+            <ul>
+              <li><a href="#">ease</a></li>
+              <li><a href="#">ease-in</a></li>
+              <li><a href="#">ease-out</a></li>
+              <li><a href="#">ease-in-out</a></li>
+              <li><a href="#">linear</a></li>
+              <li><a href="#">step-start</a></li>
+              <li><a href="#">step-end</a></li>
+              <li><a href="#">cubic-bezier()</a></li>
+              <li><a href="#">steps()</a></li>
+            </ul>
+          </div>
+          <!--START OF animation-timing-function sub-sub-section - ease-->
+          <div class="sub_sec_box">
+            <h4 id="sec_anim_time_ease">ease</h4>
+            <div class="text_box">
+              <p></p>
+            </div>
+            <div class="code_box">
+              <code>
+                <span class="comment"></span>
+              </code>
+            </div>
+          </div>
+          <!--END OF animation-timing-function sub-sub-section - ease -->
+          <!--START OF animation-timing-function sub-sub-section - ease-in -->
+          <div class="sub_sec_box">
+            <h4 id="sec_anim_time_ease">ease-in</h4>
+            <div class="text_box">
+              <p></p>
+            </div>
+            <div class="code_box">
+              <code>
+                <span class="comment"></span>
+              </code>
+            </div>
+          </div>
+          <!--END OF animation-timing-function sub-sub-section - ease-in -->
+          <!--START OF animation-timing-function sub-sub-section - ease-out -->
+          <div class="sub_sec_box">
+            <h4 id="sec_anim_time_ease_out">ease-out</h4>
+            <div class="text_box">
+              <p></p>
+            </div>
+            <div class="code_box">
+              <code>
+                <span class="comment"></span>
+              </code>
+            </div>
+          </div>
+          <!--END OF animation-timing-function sub-sub-section - ease-out -->
+          <!--START OF animation-timing-function sub-sub-section - ease-in-out -->
+          <div class="sub_sec_box">
+            <h4 id="sec_anim_time_ease_in_out">ease-in-out</h4>
+            <div class="text_box">
+              <p></p>
+            </div>
+            <div class="code_box">
+              <code>
+                <span class="comment"></span>
+              </code>
+            </div>
+          </div>
+          <!--END OF animation-timing-function sub-sub-section - ease-in-out -->
+          <!--START OF animation-timing-function sub-sub-section - linear-->
+          <div class="sub_sec_box">
+            <h4 id="sec_anim_time_linear">linear</h4>
+            <div class="text_box">
+              <p></p>
+            </div>
+            <div class="code_box">
+              <code>
+                <span class="comment"></span>
+              </code>
+            </div>
+          </div>
+          <!--END OF animation-timing-function sub-sub-section - linear-->
+          <!--START OF animation-timing-function sub-sub-section - step-start-->
+          <div class="sub_sec_box">
+            <h4 id="sec_anim_time_step_start">step-start</h4>
+            <div class="text_box">
+              <p></p>
+            </div>
+            <div class="code_box">
+              <code>
+                <span class="comment"></span>
+              </code>
+            </div>
+          </div>
+          <!--END OF animation-timing-function sub-sub-section - step-start-->
+          <!--START OF animation-timing-function sub-sub-section - step-end-->
+          <div class="sub_sec_box">
+            <h4 id="sec_anim_time_step-end">step-end</h4>
+            <div class="text_box">
+              <p></p>
+            </div>
+            <div class="code_box">
+              <code>
+                <span class="comment"></span>
+              </code>
+            </div>
+          </div>
+          <!--END OF animation-timing-function sub-sub-section - step-end-->
+          <!--START OF animation-timing-function sub-sub-section - cubic-bezier-->
+          <div class="sub_sec_box">
+            <h4 id="sec_anim_time_cub_bez">cubic-bezier()</h4>
+            <div class="text_box">
+              <p></p>
+            </div>
+            <div class="code_box">
+              <code>
+                <span class="comment"></span>
+              </code>
+            </div>
+          </div>
+          <!--END OF animation-timing-function sub-sub-section - cubic-bezier -->
+          <!--START OF animation-timing-function sub-sub-section - steps-->
+          <div class="sub_sec_box">
+            <h4 id="sec_anim_time_steps">steps</h4>
+            <div class="text_box">
+              <p></p>
+            </div>
+            <div class="menu_box">
+              <ul>
+                <li><a href="">steps(n, jump)</a></li>
+                <li><a href="">jump-start</a></li>
+                <li><a href="">jump-end</a></li>
+                <li><a href="">jump-both</a></li>
+                <li><a href="">start</a></li>
+                <li><a href="">end</a></li>
+                <li><a href="">step-start</a></li>
+                <li><a href="">step-end</a></li>
+              </ul>
+            </div>
+            <!--START OF animation-timing-function sub-sub-section - steps - steps-->
+            <div class="sub_sub_sec_box">
+              <h5 id="sec_anim_time_steps_steps">steps(n, jump)</h5>
+              <div class="text_box">
+                <p></p>
+              </div>
+              <div class="code_box">
+                <code>
+                  <span class="comment"></span>
+                </code>
+              </div>
+            </div>
+            <!--END OF animation-timing-function sub-sub-section - steps - steps-->
+            <!--START OF animation-timing-function sub-sub-section - steps - jump-start -->
+            <div class="sub_sub_sec_box">
+              <h5 id="sec_anim_time_steps_jump_start">jump-start</h5>
+              <div class="text_box">
+                <p></p>
+              </div>
+              <div class="code_box">
+                <code>
+                  <span class="comment"></span>
+                </code>
+              </div>
+            </div>
+            <!--END OF animation-timing-function sub-sub-section - steps - jump-start -->
+            <!--START OF animation-timing-function sub-sub-section - steps - jump-start -->
+            <div class="sub_sub_sec_box">
+              <h5 id="sec_anim_time_steps_jump_end">jump-end</h5>
+              <div class="text_box">
+                <p></p>
+              </div>
+              <div class="code_box">
+                <code>
+                  <span class="comment"></span>
+                </code>
+              </div>
+            </div>
+            <!--END OF animation-timing-function sub-sub-section - steps - jump-end -->
+            <!--START OF animation-timing-function sub-sub-section - steps - jump-both -->
+            <div class="sub_sub_sec_box">
+              <h5 id="sec_anim_time_steps_jump_both">jump-both</h5>
+              <div class="text_box">
+                <p></p>
+              </div>
+              <div class="code_box">
+                <code>
+                  <span class="comment"></span>
+                </code>
+              </div>
+            </div>
+            <!--END OF animation-timing-function sub-sub-section - steps - jump-both -->
+            <!--START OF animation-timing-function sub-sub-section - steps - start -->
+            <div class="sub_sub_sec_box">
+              <h5 id="sec_anim_time_steps_start">start</h5>
+              <div class="text_box">
+                <p></p>
+              </div>
+              <div class="code_box">
+                <code>
+                  <span class="comment"></span>
+                </code>
+              </div>
+            </div>
+            <!--END OF animation-timing-function sub-sub-section - steps - start -->
+            <!--START OF animation-timing-function sub-sub-section - steps - end -->
+            <div class="sub_sub_sec_box">
+              <h5 id="sec_anim_time_steps_end">end</h5>
+              <div class="text_box">
+                <p></p>
+              </div>
+              <div class="code_box">
+                <code>
+                  <span class="comment"></span>
+                </code>
+              </div>
+            </div>
+            <!--END OF animation-timing-function sub-sub-section - steps - end -->
+            <!--START OF animation-timing-function sub-sub-section - steps - start -->
+            <div class="sub_sub_sec_box">
+              <h5 id="sec_anim_time_steps_step_start">step-start</h5>
+              <div class="text_box">
+                <p></p>
+              </div>
+              <div class="code_box">
+                <code>
+                  <span class="comment"></span>
+                </code>
+              </div>
+            </div>
+            <!--END OF animation-timing-function sub-sub-section - steps - step-start -->
+            </div>
+            <!--START OF animation-timing-function sub-sub-section - steps - end -->
+          </div>
+            <div class="sub_sub_sec_box">
+              <h5 id="sec_anim_time_steps_step_end">step-end</h5>
+              <div class="text_box">
+                <p></p>
+              </div>
+              <div class="code_box">
+                <code>
+                  <span class="comment"></span>
+                </code>
+              </div>
+            </div>
+            <!--END OF animation-timing-function sub-sub-section - steps - step-end -->
+          </div>
+          <!--END OF animation-timing-function sub-sub-section - steps-->
+        <!--END OF animation-timing-function sub-section-->
+        <!--START OF animation-delay sub-section-->
+        <div class="sec_box">
+          <header>
+            <h3 id="sec_anim_delay">animation-delay</h3>
+          </header>
+          <div class="text_box">
+            <p></p>
+          </div>
+          <div class="code_box">
+            <code>
+              <span class="comment"></span>
+            </code>
+          </div>
+        </div>
+        <!--END OF animation-delay sub-section-->
+        <!--START OF animation-iteration-count sub-section-->
+        <div class="sec_box">
+          <header>
+            <h3 id="sec_anim_it_count">animation-iteration-count</h3>
+          </header>
+          <div class="text_box">
+            <p></p>
+          </div>
+          <div class="code_box">
+            <code>
+              <span class="comment"></span>
+            </code>
+          </div>
+        </div>
+        <!--END OF animation-iteration-count sub-section-->
+        <!--START OF animation-direction sub-section-->
+        <div class="sec_box">
+          <header>
+            <h3 id="sec_anim_direc">animation-direction</h3>
+          </header>
+          <div class="text_box">
+            <p></p>
+          </div>
+          <div class="code_box">
+            <code>
+              <span class="comment"></span>
+            </code>
+          </div>
+        </div>
+        <!--END OF animation-direction sub-section-->
+        <!--START OF animation-fill-mode sub-section-->
+        <div class="sec_box">
+          <header>
+            <h3 id="sec_anim_fill">animation-fill-mode</h3>
+          </header>
+          <div class="text_box">
+            <p></p>
+          </div>
+          <div class="code_box">
+            <code>
+              <span class="comment"></span>
+            </code>
+          </div>
+        </div>
+        <!--END OF animation-fill-mode sub-section-->
+        <!--START OF animation-play-state sub-section-->
+        <div class="sec_box">
+          <header>
+            <h3 id="sec_anim_play">animation-play-state</h3>
+          </header>
+          <div class="text_box">
+            <p></p>
+          </div>
+          <div class="code_box">
+            <code>
+              <span class="comment"></span>
+            </code>
+          </div>
+        </div>
+        <!--END OF animation-play-state sub-section-->
+        <!--START OF animation sub-section-->
+        <div class="sec_box">
+          <header>
+            <h3 id="sec_anim_anim>animation</h3>
+          </header>
+          <div class="text_box">
+            <p></p>
+          </div>
+          <div class="code_box">
+            <code>
+              <span class="comment"></span>
+            </code>
+          </div>
+        </div>
+        <!--END OF animation sub-section-->
+      </section>
+      <!--END OF animation section-->
+      <!--START OF keyframe section-->
+      <section>
+        <header>
+          <h2 id="sec_key">Keyframes</h2>
+        </header>
+        <div class="sec_box">
+          <div class="text_box">
+            <p></p>
+          </div>
+          <div class="code_box">
+            <code>
+              <span class="comment"></span>
+            </code>
+          </div>
+        </div>
+      </section>
+      <!--END OF keyframe section-->
+    </main>
+    <aside>
+      <p></p>
+      <ul></ul>
+    </aside>
+    <footer>
+      <p></p>
+      <author></author>
+      <ul class="social_media"></ul>
+    </footer>
+  </body>
+</html>
