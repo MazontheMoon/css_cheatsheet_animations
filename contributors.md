@@ -2,8 +2,10 @@
 
 ## Guidelines
 
-1. Create a new  branch for each feature
-2. Follow naming convention below for git commits
+1. Submit a new issue for any feature you want to work on 
+    1.1. If you want to work on this feature add this request in a comment and it will be assigned to you
+2. Create a new  branch for each feature
+3. Follow naming convention below for git commits
 
 ## Code Naming Conventions
 
