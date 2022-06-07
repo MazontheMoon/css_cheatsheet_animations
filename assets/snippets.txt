@@ -14,6 +14,8 @@ https://coolors.co/93b7be-554348-d4f5f5-8c9a9e-747578
 --col_dark
 --col_lights
 
+<span class="codeword"></span>
+<span class="comment"></span>
 
 https://github.com/MazontheMoon/css_cheatsheet_transitions_transforms/blob/main/assets/mugshot.jpg?raw=true
 
