@@ -39,6 +39,7 @@ https://favicon.io/emoji-favicons
 https://formito.com/tools/favicon
 https://hihayk.github.io/doppler/ (font line height)
 https://utopia.fyi/ (fluid typography)
+https://min-max-calculator.9elements.com/ (font clamp() calc)
 https://patterns.helloyes.dev/ (svg backgrounds)
 https://lorem.space/ (image placeholder)
 https://animista.net/ (CSS animations)
