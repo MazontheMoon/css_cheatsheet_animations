@@ -49,7 +49,7 @@ As a frontend developer, I want to quickly and easily reference CSS elements or 
 4. [ ] Build<br>
     1. [x] HTML skeleton
     2. [x] Header
-    3. [ ] Navigation
+    3. [x] Navigation
     3. [ ] Sections and Subsections
     4. [ ] Figures and Media
     4. [ ] Aside
