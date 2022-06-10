@@ -1,6 +1,6 @@
-<!--==============================================================
-My CSS Cheat Sheet for learning CSS - Transitions and Transforms
-===============================================================-->
+<!--=============================================
+My CSS Cheat Sheet for learning CSS - Animations
+=================================================-->
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
@@ -74,12 +74,28 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
             <h3 id="sec_anim_name">animation-name</h3>
           </header>
           <div class="text_box">
-            <p></p>
+            <p>...name of the @keyframes rule.</p>
           </div>
           <div class="code_box">
             <code>
-              <span class="comment"></span>
+              .box:hover {<br>
+                animation-name: rotate;<br>
+              }
             </code>
+            <code>
+              .box:hover {<br>
+                animation-name: rotate, slide;<br>
+              <span class="comment">/*multiples are allowed*/</span><br>
+            }
+
+            </code>
+            <code>
+              .box:hover {<br>
+                animation-name: none;<br>
+              
+              <span class="comment">/*none is a special keyword denoting no keyframes and can deactivate an animation*/</span><br> 
+            }        
+            </code>            
           </div>
         </div>
         <!--END OF animation-name sub-section-->
@@ -89,10 +105,13 @@ My CSS Cheat Sheet for learning CSS - Transitions and Transforms
             <h3 id="sec_anim_dur">animation-duration</h3>
           </header>
           <div class="text_box">
-            <p></p>
+            <p>...length of time for 1 cycle of animation</p>
           </div>
           <div class="code_box">
             <code>
+              .box:hover {<br>
+                animation-name: none;<br>
+              }<br>
               <span class="comment"></span>
             </code>
           </div>
