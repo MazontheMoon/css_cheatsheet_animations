@@ -87,12 +87,10 @@ My CSS Cheat Sheet for learning CSS - Animations
                 animation-name: rotate, slide;<br>
               <span class="comment">/*multiples are allowed*/</span><br>
             }
-
             </code>
             <code>
               .box:hover {<br>
-                animation-name: none;<br>
-              
+                animation-name: none;<br>              
               <span class="comment">/*none is a special keyword denoting no keyframes and can deactivate an animation*/</span><br> 
             }        
             </code>            
@@ -105,14 +103,15 @@ My CSS Cheat Sheet for learning CSS - Animations
             <h3 id="sec_anim_dur">animation-duration</h3>
           </header>
           <div class="text_box">
-            <p>...length of time for 1 cycle of animation</p>
+            <p>...length of time for 1 cycle of the animation sequence.</p>
           </div>
           <div class="code_box">
             <code>
               .box:hover {<br>
-                animation-name: none;<br>
-              }<br>
-              <span class="comment"></span>
+                animation-name: rotate;<br>
+                animation-duration: 2s;<br>
+                <span class="comment">/*set in s or ms (or -s -ms)*/</span><br>
+              }
             </code>
           </div>
         </div>
@@ -122,6 +121,9 @@ My CSS Cheat Sheet for learning CSS - Animations
           <header>
             <h3 id="sec_anim_time">animation-timing-function</h3>
           </header>
+          <div class="text_box">
+            <p>...the timing for how the animation transitions through the sequence.</p>
+          </div>
           <div class="menu_box">
             <ul>
               <li><a href="#sec_anim_time_ease">ease</a></li>
@@ -138,104 +140,144 @@ My CSS Cheat Sheet for learning CSS - Animations
           <!--START OF animation-timing-function sub-sub-section - ease-->
           <div class="sub_sec_box">
             <h4 id="sec_anim_time_ease">ease</h4>
-            <div class="text_box">
-              <p></p>
-            </div>
             <div class="code_box">
               <code>
-                <span class="comment"></span>
+                .box:hover {<br>
+                  animation-name: rotate;<br>
+                  animation-duration: 2s;<br>
+                  animation-timing-function: ease;<br>
+                }
               </code>
+            </div>
+            <div class="example">
+              <!--sample for animation-timing - ease -->
+              <div id="time_ease"></div>
             </div>
           </div>
           <!--END OF animation-timing-function sub-sub-section - ease -->
           <!--START OF animation-timing-function sub-sub-section - ease-in -->
           <div class="sub_sec_box">
             <h4 id="sec_anim_time_ease_in">ease-in</h4>
-            <div class="text_box">
-              <p></p>
-            </div>
             <div class="code_box">
               <code>
-                <span class="comment"></span>
+                .box:hover {<br>
+                  animation-name: rotate;<br>
+                  animation-duration: 2s;<br>
+                  animation-timing-function: ease-in;<br>
+                }
               </code>
+            </div>
+            <div class="example">
+              <!--sample for animation-timing - ease-in -->
+              <div id="time_ease_in"></div>
             </div>
           </div>
           <!--END OF animation-timing-function sub-sub-section - ease-in -->
           <!--START OF animation-timing-function sub-sub-section - ease-out -->
           <div class="sub_sec_box">
             <h4 id="sec_anim_time_ease_out">ease-out</h4>
-            <div class="text_box">
-              <p></p>
-            </div>
             <div class="code_box">
               <code>
-                <span class="comment"></span>
+                .box:hover {<br>
+                  animation-name: rotate;<br>
+                  animation-duration: 2s;<br>
+                  animation-timing-function: ease-out;<br>
+                }
               </code>
+            </div>
+            <div class="example">
+              <!--sample for animation-timing - ease-out -->
+              <div id="time_ease_out"></div>
             </div>
           </div>
           <!--END OF animation-timing-function sub-sub-section - ease-out -->
           <!--START OF animation-timing-function sub-sub-section - ease-in-out -->
           <div class="sub_sec_box">
             <h4 id="sec_anim_time_ease_in_out">ease-in-out</h4>
-            <div class="text_box">
-              <p></p>
-            </div>
             <div class="code_box">
               <code>
-                <span class="comment"></span>
+                .box:hover {<br>
+                  animation-name: rotate;<br>
+                  animation-duration: 2s;<br>
+                  animation-timing-function: ease-in-out;<br>
+                }
               </code>
+            </div>
+            <div class="example">
+              <!--sample for animation-timing - ease-in-out -->
+              <div id="time_ease"></div>
             </div>
           </div>
           <!--END OF animation-timing-function sub-sub-section - ease-in-out -->
           <!--START OF animation-timing-function sub-sub-section - linear-->
           <div class="sub_sec_box">
             <h4 id="sec_anim_time_linear">linear</h4>
-            <div class="text_box">
-              <p></p>
-            </div>
             <div class="code_box">
               <code>
-                <span class="comment"></span>
+                .box:hover {<br>
+                  animation-name: rotate;<br>
+                  animation-duration: 2s;<br>
+                  animation-timing-function: linear;<br>
+                }
               </code>
+            </div>
+            <div class="example">
+              <!--sample for animation-timing - linear-->
+              <div id="time_linear"></div>
             </div>
           </div>
           <!--END OF animation-timing-function sub-sub-section - linear-->
           <!--START OF animation-timing-function sub-sub-section - step-start-->
           <div class="sub_sec_box">
             <h4 id="sec_anim_time_step_start">step-start</h4>
-            <div class="text_box">
-              <p></p>
-            </div>
             <div class="code_box">
               <code>
-                <span class="comment"></span>
+                .box:hover {<br>
+                  animation-name: rotate;<br>
+                  animation-duration: 2s;<br>
+                  animation-timing-function: step-start;<br>
+                }
               </code>
+            </div>
+            <div class="example">
+              <!--sample for animation-timing - linear-->
+              <div id="time_linear"></div>
             </div>
           </div>
           <!--END OF animation-timing-function sub-sub-section - step-start-->
           <!--START OF animation-timing-function sub-sub-section - step-end-->
           <div class="sub_sec_box">
             <h4 id="sec_anim_time_step-end">step-end</h4>
-            <div class="text_box">
-              <p></p>
-            </div>
             <div class="code_box">
               <code>
-                <span class="comment"></span>
+                .box:hover {<br>
+                  animation-name: rotate;<br>
+                  animation-duration: 2s;<br>
+                  animation-timing-function: step-end;<br>
+                }
               </code>
+            </div>
+            <div class="example">
+              <!--sample for animation-timing - step-end-->
+              <div id="time_step_end"></div>
             </div>
           </div>
           <!--END OF animation-timing-function sub-sub-section - step-end-->
           <!--START OF animation-timing-function sub-sub-section - cubic-bezier-->
           <div class="sub_sec_box">
             <h4 id="sec_anim_time_cub_bez">cubic-bezier()</h4>
-            <div class="text_box">
-              <p></p>
-            </div>
             <div class="code_box">
               <code>
-                <span class="comment"></span>
+                .box:hover {<br>
+                  animation-name: rotate;<br>
+                  animation-duration: 2s;<br>
+                  animation-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);<br>
+                }
               </code>
+            </div>
+            <div class="example">
+              <!--sample for animation-timing - cubic-bezier-->
+              <div id="time_cub_bez"></div>
             </div>
           </div>
           <!--END OF animation-timing-function sub-sub-section - cubic-bezier -->
@@ -243,7 +285,7 @@ My CSS Cheat Sheet for learning CSS - Animations
           <div class="sub_sec_box">
             <h4 id="sec_anim_time_steps">steps</h4>
             <div class="text_box">
-              <p></p>
+              <p>...displays an animation iteration along <i>n</i> stops along the transition, displaying each stop for equal lengths of time.</p>
             </div>
             <div class="menu_box">
               <ul>
@@ -260,13 +302,18 @@ My CSS Cheat Sheet for learning CSS - Animations
             <!--START OF animation-timing-function sub-sub-section - steps - steps-->
             <div class="sub_sub_sec_box">
               <h5 id="sec_anim_time_steps_steps">steps(n, jump)</h5>
-              <div class="text_box">
-                <p></p>
-              </div>
               <div class="code_box">
                 <code>
-                  <span class="comment"></span>
+                  .box:hover {<br>
+                    animation-name: rotate;<br>
+                    animation-duration: 2s;<br>
+                    animation-timing-function: steps(4, jump-start);<br>
+                  }
                 </code>
+              </div>
+              <div class="example">
+                <!--sample for animation-timing - steps -->
+                <div id="time_steps_steps"></div>
               </div>
             </div>
             <!--END OF animation-timing-function sub-sub-section - steps - steps-->
