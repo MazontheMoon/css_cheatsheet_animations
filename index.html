@@ -287,6 +287,13 @@ My CSS Cheat Sheet for learning CSS - Animations
           <div class="text_box">
             <p>...displays an animation iteration along <i>n</i> stops along the transition, displaying each stop for equal lengths of time.</p>
           </div>
+          <div class="code_box">
+            <code>
+              ...{<br>
+              animation-timing-function: steps(n, jump);<br>
+              }     
+            </code>
+          </div>
           <div class="menu_box">
             <ul>
               <li><a href="#sec_anim_time_steps_jump_start">jump-start</a></li>
@@ -310,18 +317,27 @@ My CSS Cheat Sheet for learning CSS - Animations
                 }
               </code>
             </div>
+            <div class="example">
+              <!--sample for animation-timing -steps - jump-start-->
+              <div id="time_steps_jump_start"></div>
+            </div>
           </div>
           <!--END OF animation-timing-function sub-sub-section - steps - jump-start -->
-          <!--START OF animation-timing-function sub-sub-section - steps - jump-start -->
+          <!--START OF animation-timing-function sub-sub-section - steps - jump-end -->
           <div class="sub_sub_sec_box">
             <h5 id="sec_anim_time_steps_jump_end">jump-end</h5>
-            <div class="text_box">
-              <p></p>
-            </div>
             <div class="code_box">
               <code>
-                <span class="comment"></span>
+                .box:hover {<br>
+                animation-name: rotate;<br>
+                animation-duration: 2s;<br>
+                animation-timing-function: steps(4, jump-end);<br>
+                }
               </code>
+            </div>
+            <div class="example">
+              <!--sample for animation-timing -steps - jump-end-->
+              <div id="time_steps_jump_end"></div>
             </div>
           </div>
           <!--END OF animation-timing-function sub-sub-section - steps - jump-end -->
