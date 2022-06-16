@@ -344,65 +344,90 @@ My CSS Cheat Sheet for learning CSS - Animations
           <!--START OF animation-timing-function sub-sub-section - steps - jump-both -->
           <div class="sub_sub_sec_box">
             <h5 id="sec_anim_time_steps_jump_both">jump-both</h5>
-            <div class="text_box">
-              <p></p>
-            </div>
             <div class="code_box">
               <code>
-                <span class="comment"></span>
+                .box:hover {<br>
+                animation-name: rotate;<br>
+                animation-duration: 2s;<br>
+                animation-timing-function: steps(4, jump-both);<br>
+                }
               </code>
+            </div>
+            <div class="example">
+              <!--sample for animation-timing -steps - jump-both-->
+              <div id="time_steps_jump_both"></div>
             </div>
           </div>
           <!--END OF animation-timing-function sub-sub-section - steps - jump-both -->
           <!--START OF animation-timing-function sub-sub-section - steps - start -->
           <div class="sub_sub_sec_box">
             <h5 id="sec_anim_time_steps_start">start</h5>
-            <div class="text_box">
-              <p></p>
-            </div>
             <div class="code_box">
               <code>
-                <span class="comment"></span>
+                .box:hover {<br>
+                animation-name: rotate;<br>
+                animation-duration: 2s;<br>
+                animation-timing-function: steps(4, start);<br>
+                }
               </code>
+            </div>
+            <div class="example">
+              <!--sample for animation-timing -steps -start-->
+              <div id="time_steps_start"></div>
             </div>
           </div>
           <!--END OF animation-timing-function sub-sub-section - steps - start -->
           <!--START OF animation-timing-function sub-sub-section - steps - end -->
           <div class="sub_sub_sec_box">
             <h5 id="sec_anim_time_steps_end">end</h5>
-            <div class="text_box">
-              <p></p>
-            </div>
             <div class="code_box">
               <code>
-                <span class="comment"></span>
+                .box:hover {<br>
+                animation-name: rotate;<br>
+                animation-duration: 2s;<br>
+                animation-timing-function: steps(4, end);<br>
+                }
               </code>
+            </div>
+            <div class="example">
+              <!--sample for animation-timing -steps -end-->
+              <div id="time_steps_end"></div>
             </div>
           </div>
           <!--END OF animation-timing-function sub-sub-section - steps - end -->
           <!--START OF animation-timing-function sub-sub-section - steps - start -->
           <div class="sub_sub_sec_box">
             <h5 id="sec_anim_time_steps_step_start">step-start</h5>
-            <div class="text_box">
-              <p></p>
-            </div>
             <div class="code_box">
               <code>
-                <span class="comment"></span>
+                .box:hover {<br>
+                animation-name: rotate;<br>
+                animation-duration: 2s;<br>
+                animation-timing-function: steps(4, step-start);<br>
+                }
               </code>
+            </div>
+            <div class="example">
+              <!--sample for animation-timing -steps - step-start-->
+              <div id="time_steps_step_start"></div>
             </div>
           </div>
           <!--END OF animation-timing-function sub-sub-section - steps - step-start -->
           <!--START OF animation-timing-function sub-sub-section - steps - end -->
           <div class="sub_sub_sec_box">
             <h5 id="sec_anim_time_steps_step_end">step-end</h5>
-            <div class="text_box">
-              <p></p>
-            </div>
             <div class="code_box">
               <code>
-                <span class="comment"></span>
+                .box:hover {<br>
+                animation-name: rotate;<br>
+                animation-duration: 2s;<br>
+                animation-timing-function: steps(4, step-end);<br>
+                }
               </code>
+            </div>
+            <div class="example">
+              <!--sample for animation-timing -steps - step-end-->
+              <div id="time_steps_step_end"></div>
             </div>
           </div>
           <!--END OF animation-timing-function sub-sub-section - steps - step-end -->
@@ -416,11 +441,17 @@ My CSS Cheat Sheet for learning CSS - Animations
           <h3 id="sec_anim_delay">animation-delay</h3>
         </header>
         <div class="text_box">
-          <p></p>
+          <p>...delay from time it is loaded to the start of animation.</p>
         </div>
         <div class="code_box">
           <code>
-            <span class="comment"></span>
+            .box:hover {<br>
+            animation-name: rotate;<br>
+            animation-duration: 2s;<br>
+            animation-timing-function: ease;<br>
+            animation-delay: 1s;
+            <span class="comment">/*can be set as s, ms, -s , or -ms (negative -1s will start 1 sec into animation) and default is 0*/</span><br>
+            }
           </code>
         </div>
       </div>
@@ -431,11 +462,18 @@ My CSS Cheat Sheet for learning CSS - Animations
           <h3 id="sec_anim_it_count">animation-iteration-count</h3>
         </header>
         <div class="text_box">
-          <p></p>
+          <p>...number of times the animation repeats.</p>
         </div>
         <div class="code_box">
           <code>
-            <span class="comment"></span>
+            .box:hover {<br>
+            animation-name: rotate;<br>
+            animation-duration: 2s;<br>
+            animation-timing-function: ease;<br>
+            animation-delay: 1s;
+            animation-iteration-count: 3;
+            <span class="comment">/*values are numbers (1.5 will run 1 and a half times) or infinite*/</span><br>
+            }
           </code>
         </div>
       </div>
@@ -446,7 +484,7 @@ My CSS Cheat Sheet for learning CSS - Animations
           <h3 id="sec_anim_direct">animation-direction</h3>
         </header>
         <div class="text_box">
-          <p></p>
+          <p>...configures whether animation should alternate direction each run through the sequence or reset to start point</p>
         </div>
         <div class="code_box">
           <code>
