@@ -486,11 +486,33 @@ My CSS Cheat Sheet for learning CSS - Animations
         <div class="text_box">
           <p>...configures whether animation should alternate direction each run through the sequence or reset to start point</p>
         </div>
-        <div class="code_box">
-          <code>
-            <span class="comment"></span>
-          </code>
+        <div class="menu_box">
+          <ul>
+            <li><a href="#sec_anim_dir_normal">normal</a></li>
+            <li><a href="#">reverse</a></li>
+            <li><a href="#">alternate</a></li>
+            <li><a href="#">alternate-reverse</a></li>
+          </ul>
         </div>
+        <!--START OF animation-direction sub-section - normal-->
+        <div class="sub_sec_box">
+          <h4 id="sec_anim_dir_normal">normal</h4>
+          <div class="code_box">
+            <code>
+              .box:hover {<br>
+              animation-name: rotate;<br>
+              animation-duration: 2s;<br>
+              animation-timing-function: ease;<br>
+              animation-direction: normal;<br>
+              }
+            </code>
+          </div>
+          <div class="example">
+            <!--sample for animation-direction - normal -->
+            <div id="dir_normal"></div>
+          </div>
+        </div>
+        <!--END OF animation-direction sub-sub-section - normal -->
       </div>
       <!--END OF animation-direction sub-section-->
       <!--START OF animation-fill-mode sub-section-->
