@@ -33,6 +33,7 @@ https://shadows.brumm.af/
 https://omatsuri.app/color-shades-generator
 https://www.smashingmagazine.com/2021/03/svg-generators/
 http://jashgopani.me/colorinator/
+https://hexwords.netlify.app/
 https://www.imagemaps.net
 https://realfavicongenerator.net
 https://favicon.io/emoji-favicons
