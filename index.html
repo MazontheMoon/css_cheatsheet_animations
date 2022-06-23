@@ -489,9 +489,9 @@ My CSS Cheat Sheet for learning CSS - Animations
         <div class="menu_box">
           <ul>
             <li><a href="#sec_anim_dir_normal">normal</a></li>
-            <li><a href="#">reverse</a></li>
-            <li><a href="#">alternate</a></li>
-            <li><a href="#">alternate-reverse</a></li>
+            <li><a href="#sec_anim_dir_reverse">reverse</a></li>
+            <li><a href="#sec_anim_dir_alternate">alternate</a></li>
+            <li><a href="#sec_anim_dir_alternate_reverse">alternate-reverse</a></li>
           </ul>
         </div>
         <!--START OF animation-direction sub-section - normal-->
@@ -500,9 +500,11 @@ My CSS Cheat Sheet for learning CSS - Animations
           <div class="code_box">
             <code>
               .box:hover {<br>
-              animation-name: rotate;<br>
-              animation-duration: 2s;<br>
-              animation-timing-function: ease;<br>
+                animation-name: rotate;<br>
+                animation-duration: 2s;<br>
+                animation-timing-function: ease;<br>
+                animation-delay: 1s;
+                animation-iteration-count: 3;
               animation-direction: normal;<br>
               }
             </code>
@@ -519,9 +521,11 @@ My CSS Cheat Sheet for learning CSS - Animations
           <div class="code_box">
             <code>
               .box:hover {<br>
-              animation-name: rotate;<br>
-              animation-duration: 2s;<br>
-              animation-timing-function: ease;<br>
+                animation-name: rotate;<br>
+                animation-duration: 2s;<br>
+                animation-timing-function: ease;<br>
+                animation-delay: 1s;
+                animation-iteration-count: 3;
               animation-direction: reverse;<br>
               }
             </code>
@@ -538,9 +542,11 @@ My CSS Cheat Sheet for learning CSS - Animations
           <div class="code_box">
             <code>
               .box:hover {<br>
-              animation-name: rotate;<br>
-              animation-duration: 2s;<br>
-              animation-timing-function: ease;<br>
+                animation-name: rotate;<br>
+                animation-duration: 2s;<br>
+                animation-timing-function: ease;<br>
+                animation-delay: 1s;
+                animation-iteration-count: 3;
               animation-direction: alternate;<br>
               }
             </code>
@@ -557,9 +563,11 @@ My CSS Cheat Sheet for learning CSS - Animations
           <div class="code_box">
             <code>
               .box:hover {<br>
-              animation-name: rotate;<br>
-              animation-duration: 2s;<br>
-              animation-timing-function: ease;<br>
+                animation-name: rotate;<br>
+                animation-duration: 2s;<br>
+                animation-timing-function: ease;<br>
+                animation-delay: 1s;
+                animation-iteration-count: 3;
               animation-direction: alternate-reverse;<br>
               }
             </code>
@@ -578,16 +586,104 @@ My CSS Cheat Sheet for learning CSS - Animations
           <h3 id="sec_anim_fill">animation-fill-mode</h3>
         </header>
         <div class="text_box">
-          <p>...configures whether animation should alternate direction each run through the sequence or reset to start point</p>
+          <p>...configures whether animation should alternate direction each run through the sequence or reset to start point.</p>
         </div>
         <div class="menu_box">
           <ul>
-            <li><a href="#">none</a></li>
-            <li><a href="#">forwards</a></li>
-            <li><a href="#">backwards</a></li>
-            <li><a href="#">both</a></li>
+            <li><a href="#sec_anim_fill_none">none</a></li>
+            <li><a href="#sec_anim_fill_forwards">forwards</a></li>
+            <li><a href="#sec_anim_fill_backwards">backwards</a></li>
+            <li><a href="#sec_anim_fill_both">both</a></li>
           </ul>
         </div>
+        <!--START OF animation-fill-mode sub-section - none-->
+        <div class="sub_sec_box">
+          <h4 id="sec_anim_fill_none">normal</h4>
+          <div class="code_box">
+            <code>
+              .box:hover {<br>
+                animation-name: rotate;<br>
+                animation-duration: 2s;<br>
+                animation-timing-function: ease;<br>
+                animation-delay: 1s;
+                animation-iteration-count: 3;
+              animation-direction: alternate;<br>
+              animation-fill-mode: none;
+              }
+            </code>
+          </div>
+          <div class="example">
+            <!--sample for animation-fill-mode sub-section - none -->
+            <div id="fill_none"></div>
+          </div>
+        </div>
+        <!--END OF animation-animation-fill-mode sub-section - none -->
+        <!--START OF animation-fill-mode sub-section - forwards-->
+        <div class="sub_sec_box">
+          <h4 id="sec_anim_fill_forwards">forwards</h4>
+          <div class="code_box">
+            <code>
+              .box:hover {<br>
+                animation-name: rotate;<br>
+                animation-duration: 2s;<br>
+                animation-timing-function: ease;<br>
+                animation-delay: 1s;
+                animation-iteration-count: 3;
+              animation-direction: alternate;<br>
+              animation-fill-mode: forwards;
+              }
+            </code>
+          </div>
+          <div class="example">
+            <!--sample for animation-fill-mode sub-section - forwards -->
+            <div id="fill_forwards"></div>
+          </div>
+        </div>
+        <!--END OF animation-animation-fill-mode sub-section - forwards -->
+        <!--START OF animation-fill-mode sub-section - backwards-->
+        <div class="sub_sec_box">
+          <h4 id="sec_anim_fill_backwards">backwards</h4>
+          <div class="code_box">
+            <code>
+              .box:hover {<br>
+                animation-name: rotate;<br>
+                animation-duration: 2s;<br>
+                animation-timing-function: ease;<br>
+                animation-delay: 1s;
+                animation-iteration-count: 3;
+              animation-direction: alternate;<br>>
+              animation-fill-mode: backwards;
+              }
+            </code>
+          </div>
+          <div class="example">
+            <!--sample for animation-fill-mode sub-section - backwards -->
+            <div id="fill_backwards"></div>
+          </div>
+        </div>
+        <!--END OF animation-animation-fill-mode sub-section - backwards -->
+        <!--START OF animation-fill-mode sub-section - both-->
+        <div class="sub_sec_box">
+          <h4 id="sec_anim_fill_both">both</h4>
+          <div class="code_box">
+            <code>
+              .box:hover {<br>
+                animation-name: rotate;<br>
+                animation-duration: 2s;<br>
+                animation-timing-function: ease;<br>
+                animation-delay: 1s;
+                animation-iteration-count: 3;
+              animation-direction: alternate;<br>
+              animation-fill-mode: both;
+              }
+            </code>
+          </div>
+          <div class="example">
+            <!--sample for animation-fill-mode sub-section - both -->
+            <div id="fill_both"></div>
+          </div>
+        </div>
+        <!--END OF animation-animation-fill-mode sub-section - backwards -->
       </div>
       <!--END OF animation-fill-mode sub-section-->
       <!--START OF animation-play-state sub-section-->
@@ -596,11 +692,18 @@ My CSS Cheat Sheet for learning CSS - Animations
           <h3 id="sec_anim_play">animation-play-state</h3>
         </header>
         <div class="text_box">
-          <p></p>
+          <p>...pause and resume the animation sequence</p>
         </div>
         <div class="code_box">
           <code>
-            <span class="comment"></span>
+            .box:hover {<br>
+              animation-play-state: running;<br>
+            }
+          </code>
+          <code>
+            .box:hover {<br>
+            animation-play-state: paused;<br>
+            }
           </code>
         </div>
       </div>
@@ -611,11 +714,25 @@ My CSS Cheat Sheet for learning CSS - Animations
           <h3 id="sec_anim_anim">animation</h3>
         </header>
         <div class="text_box">
-          <p></p>
+          <p>...shorthand for all above animation properties.</p>
         </div>
         <div class="code_box">
+
           <code>
-            <span class="comment"></span>
+            animation: duration timing-function delay iteraction-count direction fill-mode play-state name;
+          </code>
+          <code>
+            .box:hover {<br>
+              animation-name: rotate;<br>
+              animation-duration: 2s;<br>
+              animation-timing-function: ease;<br>
+              animation-delay: 1s;
+              animation-iteration-count: 3;
+            animation-direction: alternate;<br>
+            animation-fill-mode: both;<br>
+            <span class="comment">/*can instead be...*/</span><br><br>
+            animation: 2s ease 1s 3 alternate both rotate;
+            }
           </code>
         </div>
       </div>
