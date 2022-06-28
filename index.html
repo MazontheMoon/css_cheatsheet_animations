@@ -746,11 +746,36 @@ My CSS Cheat Sheet for learning CSS - Animations
       </header>
       <div class="sec_box">
         <div class="text_box">
-          <p></p>
+          <p>Keyframes controls the  steps in animation sequence by defining styles for the keyframes (or waypoints) along the sequence.</p>
+          <p>Keyframes use % to indicate the time (0% is start and 100% is end) or can also use keyword from for 0% and to for 100%</p>
         </div>
         <div class="code_box">
           <code>
-            <span class="comment"></span>
+            @keyframes slidein {<br>
+              from {<br>
+                transform: translateX(0%);<br>
+              }<br>
+              <br>
+              to {<br>
+                transform: translateX(100%);<br>
+              }<br>
+            }<br>
+            <br>
+            <span class="comment">or...</span><br>
+            <br>
+            @keyframes slidein {<br>
+              0%{<br>
+                transform: translateX(0%);<br>
+              }<br>
+              <br>
+            50%{<br>
+                transform: translateX(50%);<br>
+              }<br>
+              <br>
+              100% {<br>
+                transform: translateX(100%);<br>
+              }<br>
+            }
           </code>
         </div>
       </div>
