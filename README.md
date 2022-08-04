@@ -46,14 +46,14 @@ As a frontend developer, I want to quickly and easily reference CSS elements or 
     3. [x] Colour scheme
     4. [x] Fonts and Icons
     5. [x] Prototype
-4. [ ] Build<br>
+4. [x] Build<br>
     1. [x] HTML skeleton
     2. [x] Header
     3. [x] Navigation
-    3. [ ] Sections and Subsections
-    4. [ ] Figures and Media
-    4. [ ] Aside
-    3. [ ] Footer 
+    3. [x] Sections and Subsections
+    4. [x] Figures and Media
+    4. [x] Aside
+    3. [x] Footer 
 5. [ ] Styling<br>
     1. [ ] Page Layout
     2. [ ] Sections
