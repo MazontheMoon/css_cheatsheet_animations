@@ -50,18 +50,34 @@ color: inherit;
 Layout
 ======*/
 body {
+  width: 600px; /*only while WIP*/
+  margin:0 auto; /*only while WIP*/
   background-color: #554348; /*only while WIP*/
   color: #fff; /*only while WIP*/
   display: grid;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+  grid-template-columns: 1fr;
+  row-gap: 0.5rem;
 }
 
 /*============
 Header and nav
 =============*/
+header {
+  grid-area: header;
+}
 
 h1 {
   text-align: center;
   border: 2px solid green;
+}
+
+nav {
+  grid-area: nav;
 }
 
 nav ul {
@@ -76,19 +92,22 @@ nav ul {
 Main and Section blocks
 ========================*/
 main {
+  grid-area: main;
   border: 2px solid blue;
 }
 
 section {
   border: 2px solid red;
 }
-/*=====
-Sidebar
-======*/
 
 /*=====
 Footer
 =======*/
+
+footer {
+  border: 2px solid brown;
+  grid-area: footer;
+}
 
 /*================
 The little touches
@@ -121,14 +140,7 @@ img:after {
 Responsivesnness
 ==================*/
 @media only screen and (min-width: 1024px) {
-  body {
-    grid-template-areas:
-      "header header header"
-      "nav nav nav"
-      "main main aside"
-      "main main aside"
-      "footer footer footer";
-  }
+  
 }
 
 /*=============
