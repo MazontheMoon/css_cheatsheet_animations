@@ -6,6 +6,8 @@ Page variables
   /*color scheme*/
 
   /*fonts*/
+  --text-font: "Roboto", Verdana, sans-serif;
+  --header-font: "Lobster", "Trebuchet MS", cursive;
 }
 
 /*======================================
@@ -68,11 +70,17 @@ body {
 Header and nav
 =============*/
 header {
+  border: 2px solid orange;
   grid-area: header;
 }
 
 h1 {
+  font-family: var(--header-font);
   text-align: center;
+  line-height: 1.6;
+  font-size: clamp(1rem, 2rem, 2.8rem);
+  color: transparent;
+  text-shadow: 1px 1px 1px #000;
   border: 2px solid green;
 }
 
