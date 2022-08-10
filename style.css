@@ -52,10 +52,8 @@ color: inherit;
 Layout
 ======*/
 body {
-  width: 600px; /*only while WIP*/
-  margin:0 auto; /*only while WIP*/
-  background-color: #554348; /*only while WIP*/
-  color: #fff; /*only while WIP*/
+  background-color: #fff; /*only while WIP*/
+  color: #000; /*only while WIP*/
   display: grid;
   grid-template-areas:
     "header"
@@ -168,7 +166,7 @@ h4 {
 }
 
 code {
-  display: inline-block;
+  display: block;
   margin: 1rem 0;
 }
 /*=====
