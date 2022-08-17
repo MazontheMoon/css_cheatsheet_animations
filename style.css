@@ -216,6 +216,62 @@ Code snippet examples
   animation-timing-function: ease;
 }
 
+#time_ease_in {
+  animation-timing-function: ease-in;
+}
+
+#time_ease_out {
+  animation-timing-function: ease-out;
+}
+
+#time_ease_in_out {
+  animation-timing-function: ease-in-out;
+}
+
+#time_linear {
+  animation-timing-function: linear;
+}
+
+#time_step_start {
+  animation-timing-function: step-start;
+}
+
+#time_step_end {
+  animation-timing-function: step-end;
+}
+
+#time_cub_bez{
+  animation-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+}
+
+#time_steps_jump_start {
+  animation-timing-function: steps(4, jump-start);
+}
+
+#time_steps_jump_end {
+  animation-timing-function: steps(4, jump-end);
+}
+
+#time_steps_jump_both {
+  animation-timing-function: steps(4, jump-both);
+}
+
+#time_steps_start{
+  animation-timing-function: steps(4, start);
+}
+
+#time_steps_end{
+  animation-timing-function: steps(4, end);
+}
+
+#time_steps_step_start{
+  animation-timing-function: steps(4, step-start);
+}
+
+#time_steps_step_end{
+  animation-timing-function: steps(4, step-end);
+}
+
 @keyframes spin {
   from {
     transform: rotate(0deg);
