@@ -68,7 +68,6 @@ body {
 Header and nav
 =============*/
 header {
-  border: 2px solid orange;
   grid-area: header;
 }
 
@@ -76,11 +75,10 @@ h1 {
   font-family: var(--header-font);
   text-align: center;
   line-height: 1.6;
-  font-size: 2rem;
+  font-size: 4rem;
   color: inherit;
   text-shadow: -1px -1px 1px #000,
     1px 1px 1px #000;;
-  border: 2px solid green;
 }
 
 nav {
@@ -96,13 +94,11 @@ nav ul {
 }
 
 nav li {
-  border: 2px solid red;
   margin: 0.3rem;
   padding: 0 0.5rem;
 }
 
 nav a {
-  border: 2px solid grey;
   font-size: 1.4rem;
 }
 
@@ -111,11 +107,9 @@ Main and Section blocks
 ========================*/
 main {
   grid-area: main;
-  border: 2px solid blue;
 }
 
 section {
-  border: 3px solid black;
   padding: 1rem;
 }
 
@@ -349,7 +343,6 @@ Footer
 =======*/
 
 footer {
-  border: 2px solid brown;
   grid-area: footer;
 }
 
@@ -429,7 +422,7 @@ span[class~="sr-only"] {
   -webkit-clip-path: inset(50%)!important;
   height: 1px!important;
   width: 1px!important;
-  position: absolute!important
+  position: absolute!important;
   overflow: hidden!important;
   white-space: nowrap!important;
   padding: 0!important;
