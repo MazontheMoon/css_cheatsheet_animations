@@ -272,6 +272,65 @@ Code snippet examples
   animation-timing-function: steps(4, step-end);
 }
 
+
+/*animation-direction*/
+
+.spin_round {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  border: 5px solid black;
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+#dir_normal {
+  animation-direction: normal;
+}
+
+#dir_reverse {
+  animation-direction: reverse;
+}
+
+#dir_reverse {
+  animation-direction: alternate;
+}
+
+#dir_alternate_reverse {
+  animation-direction: alternate-reverse;
+}
+
+/*animation-fill*/
+.spin_tri{
+  width: 100px;
+  height: 100px;
+  border: 5px solid black;
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+}
+
+#fill_none{
+  animation-fill-mode: none;
+}
+
+#fill_forward {
+  animation-fill-mode: forwards;
+}
+
+#fill_backwards{
+  animation-fill-mode: backwards;
+}
+
+#fill_both {
+  animation-fill-mode: both;
+}
+
+
 @keyframes spin {
   from {
     transform: rotate(0deg);
