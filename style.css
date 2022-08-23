@@ -4,6 +4,14 @@ Page variables
 
 :root {
   /*color scheme*/
+  --col-main-header: #747578;
+  --col-sub-header: #d4f5f5;
+  --col-main-bg: ivory;
+  --col-section-bg: #93b7be;
+  --col-codebox: #554348;
+  --col-header-text: #000;
+  --col-main-text: #000;
+  --col-code-text: #fff;
 
   /*fonts*/
   --text-font: "Roboto", Verdana, sans-serif;
@@ -45,15 +53,15 @@ body * {
 }
 
 :where(ul, ol) a {
-text-decoration: none;
-color: inherit;  
+  text-decoration: none;
+  color: inherit;
 }
 /*=====
 Layout
 ======*/
 body {
-  background-color: #fff; /*only while WIP*/
-  color: #000; /*only while WIP*/
+  background-color: var(--col-main-bg);
+  color: var(--col-main-text);
   display: grid;
   grid-template-areas:
     "header"
@@ -76,17 +84,17 @@ h1 {
   text-align: center;
   line-height: 1.6;
   font-size: 4rem;
-  color: inherit;
-  text-shadow: -1px -1px 1px #000,
-    1px 1px 1px #000;;
+  color: var(--col-header-text);
+  text-shadow: -1px -1px 1px #000, 1px 1px 1px #000;
 }
 
 nav {
   grid-area: nav;
+  background-color: var(--col-main-bg);
+  border: 2px solid;
 }
 
 nav ul {
-  border: 2px solid;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
@@ -107,43 +115,46 @@ Main and Section blocks
 ========================*/
 main {
   grid-area: main;
-}
-
-section {
-  padding: 1rem;
+  background-color: var(--col-section-bg);
 }
 
 section header {
-  border-bottom:3px solid black;
+  border-bottom: 3px solid black;
 }
 
-header h2 {
+h2 {
   line-height: 1.8;
-  margin: 0.5rem 0.2rem;
+  padding: 0.5rem 0.2rem;
   font-family: var(--header-font);
+  background-color: var(--col-sub-header);
 }
 
-header h3 {
+h3 {
   line-height: 1.4;
-  margin: 0.8rem 0.2rem;
+  padding: 0.8rem 0.2rem;
   font-family: var(--header-font);
+  background-color: var(--col-sub-header);
 }
 
 h4 {
   line-height: 1.4;
-  margin: 0.6rem 0;
+  padding: 0.6rem 0;
   font-family: var(--header-font);
+  background-color: var(--col-sub-header);
 }
 
-section p, code {
+section p,
+code {
   font-family: var(--text-font);
+  color: var(--col-main-text);
 }
 
-.sec_box, .sub_sec_box {
+.sec_box,
+.sub_sec_box {
   padding: 0 0.4rem;
 }
 
-.menu_box  {
+.menu_box {
   margin: 0rem 1rem;
 }
 .menu_box li {
@@ -155,15 +166,15 @@ section p, code {
 }
 
 .text_box {
-  padding: 0.3rem 0;
+  padding: 0.5rem 0.3rem;
+  background-color: var(--col-main-bg);
 }
 
 .code_box {
   border: 2px solid black;
   margin: 1rem;
   padding: 1rem;
-  background-color: #212121;
-  color: white;
+  background-color: var(--col-codebox);
   box-shadow: 2px 2px 3px #212121;
 }
 
@@ -171,6 +182,7 @@ code {
   display: block;
   margin: 1rem 0;
   font-weight: bold;
+  color: var(--col-code-text);
 }
 
 code .comment {
@@ -184,10 +196,10 @@ Code snippet examples
 
 .example {
   position: relative;
-  border: 2px solid black;
+  border: 2px solid #000;
   margin: 1rem;
   padding: 2rem;
-  background-color: #616161;
+  background-color: var(--col-codebox);
   box-shadow: 2px 2px 3px #212121;
   display: flex;
   flex-flow: column wrap;
@@ -234,8 +246,8 @@ Code snippet examples
   animation-timing-function: step-end;
 }
 
-#time_cub_bez{
-  animation-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+#time_cub_bez {
+  animation-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
 }
 
 #time_steps_jump_start {
@@ -250,22 +262,21 @@ Code snippet examples
   animation-timing-function: steps(4, jump-both);
 }
 
-#time_steps_start{
+#time_steps_start {
   animation-timing-function: steps(4, start);
 }
 
-#time_steps_end{
+#time_steps_end {
   animation-timing-function: steps(4, end);
 }
 
-#time_steps_step_start{
+#time_steps_step_start {
   animation-timing-function: steps(4, step-start);
 }
 
-#time_steps_step_end{
+#time_steps_step_end {
   animation-timing-function: steps(4, step-end);
 }
-
 
 /*animation-direction*/
 
@@ -297,10 +308,10 @@ Code snippet examples
 }
 
 /*animation-fill*/
-.spin_tri{
+.spin_tri {
   width: 0;
   height: 0;
-  border-bottom:100px solid black;
+  border-bottom: 100px solid black;
   border-right: 50px solid transparent;
   border-left: 50px solid transparent;
   animation-name: spin;
@@ -310,7 +321,7 @@ Code snippet examples
   animation-direction: alternate;
 }
 
-#fill_none{
+#fill_none {
   animation-fill-mode: none;
 }
 
@@ -318,7 +329,7 @@ Code snippet examples
   animation-fill-mode: forwards;
 }
 
-#fill_backwards{
+#fill_backwards {
   animation-fill-mode: backwards;
 }
 
@@ -326,13 +337,12 @@ Code snippet examples
   animation-fill-mode: both;
 }
 
-
 @keyframes spin {
   from {
     transform: rotate(0deg);
     opacity: 1;
   }
-  
+
   to {
     transform: rotate(360deg);
     opacity: 0.1;
@@ -377,7 +387,6 @@ img:after {
 Responsivesnness
 ==================*/
 @media only screen and (min-width: 1024px) {
-  
 }
 
 /*=============
@@ -417,15 +426,15 @@ Accessibility
 /*For screen readers only - removed from page view*/
 span[class~="sr-only"] {
   border: 0 !important;
-  clip: rect(1px, 1px, 1px, 1px)!important;
-  clip-path: inset(50%)!important;
-  -webkit-clip-path: inset(50%)!important;
-  height: 1px!important;
-  width: 1px!important;
-  position: absolute!important;
-  overflow: hidden!important;
-  white-space: nowrap!important;
-  padding: 0!important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  clip-path: inset(50%) !important;
+  -webkit-clip-path: inset(50%) !important;
+  height: 1px !important;
+  width: 1px !important;
+  position: absolute !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  padding: 0 !important;
   margin: -1px !important;
 }
 
