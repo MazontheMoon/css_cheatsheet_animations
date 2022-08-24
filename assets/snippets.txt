@@ -13,13 +13,14 @@ Light cyan #D4F5F5
 Cadet grey #8C9A9E
 Sonic silver #747578
 
---col-main-header: ;
---col-sub-header: ;
---col-main-bg: ;
---col-section-bg:
---col-codebox: ;
---col-header-text: ;
---col-main-text: ;
+--col-main-header
+--col-sub-header
+--col-main-bg
+--col-section-bg
+--col-codebox
+--col-header-text
+--col-main-text
+--col-code-text
 
 <span class="codeword"></span>
 <span class="comment"></span>
