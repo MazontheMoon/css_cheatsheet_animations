@@ -9,7 +9,7 @@ Page variables
   --col-main-bg: ivory;
   --col-section-bg: #93b7be;
   --col-codebox: #554348;
-  --col-header-text: #000;
+  --col-header-text: #747578;
   --col-main-text: #000;
   --col-code-text: #fff;
 
@@ -82,16 +82,15 @@ header {
 h1 {
   font-family: var(--header-font);
   text-align: center;
-  line-height: 1.6;
+  line-height: 1.4;
   font-size: 4rem;
   color: var(--col-header-text);
-  text-shadow: -1px -1px 1px #000, 1px 1px 1px #000;
+  text-shadow: 2px 2px 2px #000, 1px 1px 1px #000, -1px -1px 1px #000,
+    -2px -2px 2px #000;
 }
 
 nav {
   grid-area: nav;
-  background-color: var(--col-main-bg);
-  border: 2px solid;
 }
 
 nav ul {
@@ -99,11 +98,16 @@ nav ul {
   flex-flow: row wrap;
   justify-content: space-evenly;
   align-items: center;
+  margin: 0 0.3rem;
 }
 
 nav li {
   margin: 0.3rem;
-  padding: 0 0.5rem;
+  padding: 0.5rem;
+  background-color: var(--col-sub-header);
+  border: 2px solid;
+  flex: 1;
+  text-align: center;
 }
 
 nav a {
@@ -123,25 +127,30 @@ h2 {
   padding: 0.5rem 0.2rem;
   font-family: var(--header-font);
   background-color: var(--col-sub-header);
-  border-bottom: 2px solid black;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  box-shadow: 1px 1px 3px black, -1px -1px 3px black;
 }
 
 h3 {
   line-height: 1.4;
+  text-align: center;
   padding: 0.8rem 0.2rem;
   font-family: var(--header-font);
   background-color: var(--col-sub-header);
-  border-left: 5px solid black;
   margin-bottom: 1rem;
-  border-bottom: 1px solid black;
+  border: 2px solid black;
+  box-shadow: 2px 2px 3px black;
 }
 
 h4 {
   line-height: 1.4;
+  text-align: center;
   padding: 0.6rem 0;
   font-family: var(--header-font);
   background-color: var(--col-sub-header);
-  border-left: 3px solid black;
+  border: 1px solid black;
+  box-shadow: 1px 1px 2px black;
 }
 
 section p,
@@ -156,7 +165,8 @@ code {
 }
 
 .menu_box {
-  margin: 0rem 1rem;
+  margin: 1rem;
+  background-color: var(--col-main-bg);
 }
 .menu_box li {
   padding: 0.3rem 0.5rem;
