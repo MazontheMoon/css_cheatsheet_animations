@@ -82,8 +82,9 @@ header {
 h1 {
   font-family: var(--header-font);
   text-align: center;
-  line-height: 1.4;
-  font-size: 4rem;
+  font-size: 3.8rem;
+  letter-spacing: 2px;
+  font-kerning: auto;
   color: var(--col-header-text);
   text-shadow: 2px 2px 2px #000, 1px 1px 1px #000, -1px -1px 1px #000,
     -2px -2px 2px #000;
@@ -110,8 +111,15 @@ nav li {
   text-align: center;
 }
 
-nav a {
-  font-size: 1.4rem;
+nav li a {
+  display: block;
+  width: 100%;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 1px var(--col-header-text);
+}
+
+nav li:hover {
+  background-color: var(--col-section-bg);
 }
 
 /*======================
@@ -123,7 +131,9 @@ main {
 }
 
 h2 {
+  font-size: 2rem;
   line-height: 1.8;
+  letter-spacing: 2px;
   padding: 0.5rem 0.2rem;
   font-family: var(--header-font);
   background-color: var(--col-sub-header);
@@ -133,7 +143,9 @@ h2 {
 }
 
 h3 {
+  font-size: 1.8rem;
   line-height: 1.4;
+  letter-spacing: 2px;
   text-align: center;
   padding: 0.8rem 0.2rem;
   font-family: var(--header-font);
@@ -144,9 +156,25 @@ h3 {
 }
 
 h4 {
+  font-size: 1.6rem;
   line-height: 1.4;
-  text-align: center;
-  padding: 0.6rem 0;
+  letter-spacing: 2px;
+  font-style: italic;
+  margin: 0 1rem;
+  padding: 0.6rem 0.4rem;
+  font-family: var(--header-font);
+  background-color: var(--col-sub-header);
+  border: 1px solid black;
+  box-shadow: 1px 1px 2px black;
+}
+
+h5 {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  letter-spacing: 2px;
+  font-style: italic;
+  margin: 0 1rem;
+  padding: 0.6rem 0.4rem;
   font-family: var(--header-font);
   background-color: var(--col-sub-header);
   border: 1px solid black;
@@ -155,6 +183,7 @@ h4 {
 
 section p,
 code {
+  font-size: 1.2rem;
   font-family: var(--text-font);
   color: var(--col-main-text);
 }
@@ -167,7 +196,10 @@ code {
 .menu_box {
   margin: 1rem;
   background-color: var(--col-main-bg);
+  border: 1px solid var(--col-main-text);
+  box-shadow: 1px 1px 4px var(--col-main-text);
 }
+
 .menu_box li {
   padding: 0.3rem 0.5rem;
 }
@@ -176,11 +208,19 @@ code {
   font-size: 1rem;
 }
 
+.menu_box li:hover {
+  background-color: var(--col-section-bg);
+  font-weight: bold;
+}
+
 .text_box {
-  padding: 0.5rem 0.3rem;
+  padding: 0.5rem;
   background-color: var(--col-main-bg);
 }
 
+h4 + .text_box {
+  margin: 0.3rem 1rem 0;
+}
 .code_box {
   border: 2px solid black;
   margin: 1rem;
