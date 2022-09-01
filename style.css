@@ -69,7 +69,6 @@ body {
     "main"
     "footer";
   grid-template-columns: 1fr;
-  row-gap: 0.5rem;
 }
 
 /*============
@@ -191,6 +190,7 @@ code {
 .sec_box,
 .sub_sec_box {
   padding: 0 0.4rem;
+  margin-top: 0.3rem;
 }
 
 .menu_box {
@@ -405,9 +405,49 @@ Footer
 
 footer {
   grid-area: footer;
+  border-top: 5px solid var(--col-main-text);
 }
 
-/*================
+footer div {
+  padding: 1rem;
+}
+
+footer div ul {
+  font-size: 1.3rem;
+}
+
+footer div ul li {
+  padding: 0.3rem;
+}
+
+footer div ul li:hover {
+  background-color: var(--col-section-bg);
+}
+
+footer p {
+  line-height: 1.5;
+}
+
+author {
+  display: none;
+}
+
+.social_media {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.social_media li {
+  padding: 0.5rem;
+  font-size: 1.8rem;
+}
+
+.social_media li:hover a span {
+  filter: drop-shadow(1px 1px 5px blue);
+}
+
+==============
 The little touches
 =================*/
 
