@@ -55,11 +55,11 @@ As a frontend developer, I want to quickly and easily reference CSS elements or 
     4. [x] Aside
     3. [x] Footer 
 5. [ ] Styling<br>
-    1. [X] Page Layout
-    2. [X] Sections
-    3. [X] Backgrounds
+    1. [x] Page Layout
+    2. [x] Sections
+    3. [x] Backgrounds
     4. [x] Text and Fonts
-    5. [ ] Icons and Media
+    5. [x] Icons and Media
     6. [ ] Colours and light/dark modes
     7. [ ] Responsivesness
     8. [ ] Accessibility
