@@ -6,16 +6,16 @@ Page variables
   /*color scheme*/
   --col-main-header: #747578;
   --col-sub-header: #d4f5f5;
-  --col-main-bg: ivory;
+  --col-main-bg: #1e1b18;
   --col-section-bg: #93b7be;
   --col-codebox: #554348;
   --col-header-text: #747578;
-  --col-main-text: #000;
+  --col-main-text: #ffd;
   --col-code-text: #fff;
 
   /*fonts*/
   --text-font: "Roboto", Verdana, sans-serif;
-  --header-font: "Lobster", "Trebuchet MS", cursive;
+  --header-font: "Comfortaa", "Trebuchet MS", cursive;
 }
 
 /*======================================
@@ -83,7 +83,7 @@ header {
 h1 {
   font-family: var(--header-font);
   text-align: center;
-  font-size: 3.8rem;
+  font-size: clamp(1.2rem, 3rem, 3.8rem);
   letter-spacing: 2px;
   font-kerning: auto;
   color: var(--col-header-text);
@@ -163,10 +163,12 @@ nav li a {
   display: block;
   width: 100%;
   font-size: 1.5rem;
+  color: #000;
   text-shadow: 1px 1px 1px var(--col-header-text);
 }
 
-nav li:hover {
+nav li:hover,
+nav li:focus {
   background-color: var(--col-section-bg);
 }
 
@@ -182,8 +184,9 @@ h2 {
   font-size: 2rem;
   line-height: 1.8;
   letter-spacing: 2px;
-  padding: 0.5rem 0.2rem;
+  padding: 0.5rem;
   font-family: var(--header-font);
+  color: #000;
   background-color: var(--col-sub-header);
   border-top: 2px solid;
   border-bottom: 2px solid;
@@ -195,8 +198,9 @@ h3 {
   line-height: 1.4;
   letter-spacing: 2px;
   text-align: center;
-  padding: 0.8rem 0.2rem;
+  padding: 0.8rem 0.4rem;
   font-family: var(--header-font);
+  color: #000;
   background-color: var(--col-sub-header);
   margin-bottom: 1rem;
   border: 2px solid black;
@@ -211,6 +215,7 @@ h4 {
   margin: 0 1rem;
   padding: 0.6rem 0.4rem;
   font-family: var(--header-font);
+  color: #000;
   background-color: var(--col-sub-header);
   border: 1px solid black;
   box-shadow: 1px 1px 2px black;
@@ -224,6 +229,7 @@ h5 {
   margin: 0 1rem;
   padding: 0.6rem 0.4rem;
   font-family: var(--header-font);
+  color: #000;
   background-color: var(--col-sub-header);
   border: 1px solid black;
   box-shadow: 1px 1px 2px black;
@@ -245,21 +251,26 @@ code {
 .menu_box {
   margin: 1rem;
   background-color: var(--col-main-bg);
-  border: 1px solid var(--col-main-text);
   box-shadow: 1px 1px 4px var(--col-main-text);
 }
 
 .menu_box li {
-  padding: 0.3rem 0.5rem;
+  padding: 0.5rem;
 }
 
 .menu_box li a {
   font-size: 1rem;
+  font-weight: bold;
+  border-bottom: 2px solid var(--col-main-bg);
 }
 
-.menu_box li:hover {
-  background-color: var(--col-section-bg);
-  font-weight: bold;
+.menu_box li:hover,
+.menu_box li:focus {
+  border-bottom: 2px solid var(--col-section-bg);
+  color: var(--col-section-bg);
+}
+
+.text_box {
 }
 
 .text_box {
@@ -467,10 +478,12 @@ footer div ul {
 
 footer div ul li {
   padding: 0.3rem;
+  border-bottom: 3px solid transparent;
 }
 
-footer div ul li:hover {
-  background-color: var(--col-section-bg);
+footer div ul li:hover,
+footer div ul li:focus {
+  border-bottom: 3px solid var(--col-section-bg);
 }
 
 footer p {
@@ -535,8 +548,8 @@ Accessibility
 
 @media (prefers-color-scheme: dark) {
   root {
-    --col_dark: #1e1b18;
-    --col_light: #fffaff;
+    --col-main-bg: #1e1b18;
+    --col-main-text: #ff3;
   }
 
   img {
@@ -546,8 +559,8 @@ Accessibility
 
 @media (prefers-color-scheme: light) {
   root {
-    --col_dark: #fffaff;
-    --col_light: #1e1b18;
+    --col-main-bg: #fffaff;
+    --col-main-text: #000;
   }
 }
 
