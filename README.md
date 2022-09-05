@@ -60,7 +60,7 @@ As a frontend developer, I want to quickly and easily reference CSS elements or 
     3. [x] Backgrounds
     4. [x] Text and Fonts
     5. [x] Icons and Media
-    6. [ ] Colours and light/dark modes
+    6. [x] Colours and light/dark modes
     7. [ ] Responsivesness
     8. [ ] Accessibility
     9. [ ] Print view
