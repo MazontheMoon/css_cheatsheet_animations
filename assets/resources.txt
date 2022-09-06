@@ -23,6 +23,8 @@ https://www.a11yproject.com/checklist/
 https://toptal.com/developers/gitignore
 https://www.freecodecamp.org/news/markdown-cheat-sheet/
 
+https://www.checklist.design/
+
 
 https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs
 
