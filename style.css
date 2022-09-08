@@ -60,6 +60,10 @@ body * {
 /*=====
 Layout
 ======*/
+html {
+  background-color: var(--col-main-bg);
+}
+
 body {
   background-color: var(--col-main-bg);
   color: var(--col-main-text);
@@ -123,7 +127,7 @@ h1 {
 
   60% {
     transform: rotate(-180deg);
-    transform: translateX(90vw);
+    transform: translateX(45vw);
   }
 
   80% {
@@ -132,7 +136,7 @@ h1 {
   }
 
   100% {
-    color: var(--col-header-text);
+    color: var(--col-section-bg);
     transform: rotate(360deg);
     opacity: 0%;
   }
@@ -539,8 +543,6 @@ img:after {
 /*================
 Responsivesnness
 ==================*/
-@media only screen and (min-width: 768px) {
-}
 
 @media only screen and (min-width: 1024px) {
   body {
@@ -553,6 +555,9 @@ Responsivesnness
 }
 
 @media only screen and (min-width: 1440px) {
+  body {
+    max-width: 80vw;
+  }
 }
 
 /*=============
