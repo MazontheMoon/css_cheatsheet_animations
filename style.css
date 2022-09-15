@@ -97,8 +97,8 @@ h1 {
 
 .anim_icon {
   position: absolute;
-  top: 0.5rem;
-  left: 0.5rem;
+  top: 0;
+  left: 0;
   font-size: 3rem;
   padding: 0.5rem;
   color: var(--col-header-text);
@@ -127,7 +127,6 @@ h1 {
 
   60% {
     transform: rotate(-180deg);
-    transform: translateX(45vw);
   }
 
   80% {
@@ -248,9 +247,11 @@ code {
 }
 
 .sec_box,
-.sub_sec_box {
+.sub_sec_box,
+.sub_sub_sec_box {
   padding: 0 0.4rem;
   margin-top: 0.3rem;
+  position: relative;
 }
 
 .menu_box {
@@ -274,7 +275,6 @@ code {
   border-bottom: 2px solid var(--col-section-bg);
   color: var(--col-section-bg);
 }
-
 
 .text_box {
   padding: 0.5rem;
@@ -518,14 +518,19 @@ The little touches
 
 /*Back to top shortcut button*/
 .backtotop {
-  position: relative;
-  right: 0;
+  position: absolute;
+  right: 2rem;
   bottom: 0;
 }
 
 .backtotop a {
-  font-size: 1rem;
+  font-size: 1.2rem;
+  color: var(--col-main-text);
+}
+
+.backtotop a:hover {
   color: black;
+  text-shadow: 1px 1px 3px blue;
 }
 
 /*in case of image not found*/
