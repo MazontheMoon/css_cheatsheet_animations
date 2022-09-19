@@ -629,19 +629,24 @@ span[class~="sr-only"] {
     Ye Olde Time Print View
     ========================*/
 @media print {
-  body {
-    background-color: unset;
+
+  body * {
+    background-color: none;
+    background: none;
     color: #000;
+    font-size: 14pt;
+    font-weight: normal;
+    border: none;
+    box-shadow: none;
+    text-shadow: none;
   }
 
   /*remove unneeded elements*/
-  header,
-  nav {
+  nav, .anim_icon, .backtotop, .example {
     display: none;
   }
 
   /*display links*/
-
   footer a:link {
     color: #000;
     margin: 0;
