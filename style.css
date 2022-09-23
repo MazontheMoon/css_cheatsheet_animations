@@ -81,7 +81,7 @@ Header and nav
 =============*/
 header {
   grid-area: header;
-  display: relative;
+  position: relative;
 }
 
 h1 {
@@ -631,7 +631,7 @@ span[class~="sr-only"] {
 @media print {
 
   body * {
-    background-color: none;
+    background-color: unset;
     background: none;
     color: #000;
     font-size: 14pt;
