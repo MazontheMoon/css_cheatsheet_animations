@@ -54,7 +54,7 @@ As a frontend developer, I want to quickly and easily reference CSS elements or 
     4. [x] Figures and Media
     4. [x] Aside
     3. [x] Footer 
-5. [ ] Styling<br>
+5. [x] Styling<br>
     1. [x] Page Layout
     2. [x] Sections
     3. [x] Backgrounds
@@ -64,15 +64,13 @@ As a frontend developer, I want to quickly and easily reference CSS elements or 
     7. [x] Responsivesness
     8. [x] Accessibility
     9. [x] Print view
-6. [ ] Testing<br>
-    1. [ ] Clean HTML
-    2. [ ] Clean CSS
-    3. [ ] Different viewport sizes
-    4. [ ] Different browsers
-    5. [ ] Broken link check
-    6. [ ] Image not found
-
-
+6. [x] Testing<br>
+    1. [x] Clean HTML
+    2. [x] Clean CSS
+    3. [x] Different viewport sizes
+    4. [x] Different browsers
+    5. [x] Broken link check
+  
 
 ## Contributors
 
